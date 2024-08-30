@@ -3,33 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>AT3K_CA - Fun</title>
-    <style>
-        .head{
-            position: fixed;
-            head: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-        }
-        .box{
-            border: 1px solid black;
-        }
-        .root{
-            flex: 1 1 50%;
-            box-sizing: border-box;
-            padding: 10px;
-        }
-        .hid {
-                background-color: black;  /* 背景颜色为黑色 */
-                color: black;             /* 默认文字颜色为黑色 */
-                display: inline-block;    /* 使 div 的大小仅与内容一样，并保持块级元素的特性 */
-                transition: color 10s;   /* 文字颜色的平滑过渡效果 */
-        }
-
-        .hid:hover {
-                color: white;            /* 鼠标悬停时文字颜色变为白色 */
-        }
-    </style>
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
 <!-- div:
@@ -38,8 +12,12 @@
 	<p>Idea</p>
 </div>
  -->
+<canvas id="canvas">抱歉，你的浏览器不支持 canvas 元素
+    （这些内容将会在不支持&lt;canvas%gt;元素的浏览器或是禁用了 JavaScript
+    的浏览器内渲染并展现）</canvas>
+<script src="particle.js"></script>
 <p class="head"><a href="index.html">[返回]</a></p>
-<div class="root">>
+<div class="root">
     <div class="box">
         <h3>开学考? 2023/9/3</h3>
         <p>可能是给仍未从假期mode转换的同学们一记重拳吧(</p>
@@ -227,6 +205,9 @@
         <p>它们很混乱</p>
         <p>我喜欢</p>
     </div>
+</div>
+<div class="foot">
+    <p>AT3K_CA copyright</p>
 </div>
 </body>
 </html>
