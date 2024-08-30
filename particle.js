@@ -2,6 +2,9 @@ let canvas = document.getElementById("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let ctx = canvas.getContext("2d");
+
+ctx.fillStyle = '#FFFFFF';
+
 let particles = [];
 let mouse = {
     x: -500,
@@ -51,7 +54,7 @@ function drawLineP(x1,y1,x2,y2){
         ctx.beginPath();
         ctx.moveTo(x1,y1);
         ctx.lineTo(x2,y2);
-        ctx.strokeStyle = "rgba(0,0,0,"+(1 - (distanceP/65))+")";
+        ctx.strokeStyle = "rgba(255,255,255,"+(1 - (distanceP/65))+")";
         ctx.stroke();
     }
 }
@@ -61,7 +64,7 @@ function drawLineM(x1,y1,mx,my){
         ctx.beginPath();
         ctx.moveTo(x1,y1);
         ctx.lineTo(mx,my);
-        ctx.strokeStyle = "rgba(0,0,0,"+(1 - (distanceM/100))+")";
+        ctx.strokeStyle = "rgba(255,255,255,"+(1 - (distanceM/100))+")";
         ctx.stroke();
     }
 }
