@@ -66,7 +66,7 @@ function drawLineM(x1,y1,mx,my){
     }
 }
 function init() {
-    for (let i = 0; i < 75; i++) {
+    for (let i = 0; i < 80; i++) {
         particles.push(new particle())
     }
 }

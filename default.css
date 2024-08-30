@@ -23,7 +23,7 @@
     background-color: black;  /* 背景颜色为黑色 */
     color: black;             /* 默认文字颜色为黑色 */
     display: inline-block;    /* 使 div 的大小仅与内容一样，并保持块级元素的特性 */
-    transition: color 10s;   /* 文字颜色的平滑过渡效果 */
+    transition: color 5s;   /* 文字颜色的平滑过渡效果 */
 }
 
 .hid:hover {
