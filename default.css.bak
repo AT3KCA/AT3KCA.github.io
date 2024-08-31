@@ -9,23 +9,16 @@ body{
     padding: 10px;
 }
 
+.box {
+    border: 3px solid #7B7B7B;
+    color: #FFFFFF;
+}
+
 .root {
     flex: 1 1 50%;
     box-sizing: border-box;
     padding: 10px;
     background-color: #3B3B3B;
-}
-
-.box {
-    border: 3px solid #7B7B7B;
-    color: #FFFFFF;
-    position: relative;
-}
-
-.box img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
 }
 .foot {
     position: fixed;
