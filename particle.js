@@ -48,40 +48,52 @@ class particle {
         ctx.fill();
     }
 }
-function drawLineP(x1,y1,x2,y2){
-    let distanceP = Math.sqrt(Math.pow(x1 - x2,2) + Math.pow(y1 - y2,2));
-    if (distanceP < 125){
+function drawLineP(x1, y1, x2, y2) {
+    let dx = x1 - x2;
+    let dy = y1 - y2;
+    let squareDistance = dx * dx + dy * dy;
+    if (squareDistance < 125 * 125) {
         ctx.beginPath();
-        ctx.moveTo(x1,y1);
-        ctx.lineTo(x2,y2);
-        ctx.strokeStyle = "rgba(255,255,255,"+(1 - (distanceP/65))+")";
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        let distance = Math.sqrt(squareDistance);
+        ctx.strokeStyle = "rgba(255,255,255," + (1 - (distance / 65)) + ")";
         ctx.stroke();
     }
 }
-function drawLineM(x1,y1,mx,my){
-    let distanceM = Math.sqrt(Math.pow(x1 - mx,2) + Math.pow(y1 - my,2));
-    if (distanceM < 175){
+
+function drawLineM(x1, y1, mx, my) {
+    let dx = x1 - mx;
+    let dy = y1 - my;
+    let squareDistance = dx * dx + dy * dy;
+    if (squareDistance < 175 * 175) {
         ctx.beginPath();
-        ctx.moveTo(x1,y1);
-        ctx.lineTo(mx,my);
-        ctx.strokeStyle = "rgba(255,255,255,"+(1 - (distanceM/100))+")";
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(mx, my);
+        let distance = Math.sqrt(squareDistance);
+        ctx.strokeStyle = "rgba(255,255,255," + (1 - (distance / 100)) + ")";
         ctx.stroke();
     }
 }
+
 function init() {
     for (let i = 0; i < 75; i++) {
         particles.push(new particle())
     }
 }
+let p1,p2;
 function ani() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i in particles) {
-        let p1 = particles[i];
+        p1 = particles[i];
         p1.update();
         p1.draw();
         drawLineM(p1.x,p1.y,mouse.x,mouse.y);
-        for (let j in particles.slice(i, particles.length)) {
-            let p2 = particles[j];
+        for (let j in particles) {
+            p2 = particles[j];
+            if (p1 === p2){
+                continue;
+            }
             drawLineP(p1.x,p1.y,p2.x,p2.y);
         }
     }
