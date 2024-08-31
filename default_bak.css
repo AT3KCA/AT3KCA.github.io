@@ -1,0 +1,71 @@
+body{
+    background-color: #333333;
+}
+.head {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.box {
+    border: 3px solid #7B7B7B;
+    color: #FFFFFF;
+}
+
+.root {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #3B3B3B;
+}
+.foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #8aff8d;
+}
+.hid {
+    background-color: black;
+    /* 背景颜色为黑色 */
+    color: black;
+    /* 默认文字颜色为黑色 */
+    display: inline-block;
+    /* 使 div 的大小仅与内容一样，并保持块级元素的特性 */
+    transition: color 4.5s;
+    /* 文字颜色的平滑过渡效果 */
+}
+
+.hid:hover {
+    color: white;
+    /* 鼠标悬停时文字颜色变为白色 */
+}
+
+a:link{
+    color: #FFBABA;
+}
+a:visited{
+    color: #7FFFD4;
+}
+a:hover{
+    color: #ef90ff;
+}
+a:active{
+    color: #ffee93;
+}
+
+
+canvas {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
