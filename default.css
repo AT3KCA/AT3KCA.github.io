@@ -1,6 +1,7 @@
 body{
     background-color: #333333;
 }
+
 .head {
     position: fixed;
     left: 0;
@@ -33,7 +34,7 @@ body{
 .hid {
     background-color: black;
     /* 背景颜色为黑色 */
-    color: black;
+    color: #000000;
     /* 默认文字颜色为黑色 */
     display: inline-block;
     /* 使 div 的大小仅与内容一样，并保持块级元素的特性 */
@@ -42,7 +43,7 @@ body{
 }
 
 .hid:hover {
-    color: white;
+    color: #FFF9F9;
     /* 鼠标悬停时文字颜色变为白色 */
 }
 
@@ -58,8 +59,6 @@ a:hover{
 a:active{
     color: #ffee93;
 }
-
-
 canvas {
     position: fixed;
     bottom: 0;
@@ -68,4 +67,12 @@ canvas {
     height: 100%;
     pointer-events: none;
     z-index: 1;
+}
+h3{
+    color: #F0FFDB;
+    font-family: "微软雅黑", serif;
+}
+p{
+    color: #FFF9F9;
+    font-family: "微软雅黑", serif;
 }

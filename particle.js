@@ -69,13 +69,10 @@ function drawLineM(x1,y1,mx,my){
     }
 }
 function init() {
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 75; i++) {
         particles.push(new particle())
     }
 }
-
-init();
-
 function ani() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i in particles) {
@@ -90,4 +87,5 @@ function ani() {
     }
 }
 
-setInterval(ani, 1000 / 500);
+init();
+setInterval(ani, 20);
