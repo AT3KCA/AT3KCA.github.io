@@ -48,13 +48,13 @@ body{
 }
 
 a:link{
-    color: #FFBABA;
+    color: #ffc3c3;
 }
 a:visited{
     color: #7FFFD4;
 }
 a:hover{
-    color: #ef90ff;
+    color: #ffa3f8;
 }
 a:active{
     color: #ffee93;
