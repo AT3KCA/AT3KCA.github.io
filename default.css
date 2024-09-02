@@ -5,8 +5,8 @@ body{
 .head {
     position: fixed;
     left: 0;
+    top: 2%;
     width: 100%;
-    padding: 10px;
     z-index: 1;
 }
 
