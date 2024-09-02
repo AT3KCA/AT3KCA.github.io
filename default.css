@@ -84,3 +84,9 @@ p{
     color: #FFF9F9;
     font-family: "微软雅黑", serif;
 }
+embed{
+    z-index: 0;
+}
+iframe{
+    z-index: 0;
+}
