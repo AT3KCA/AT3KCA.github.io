@@ -11,8 +11,9 @@ window.addEventListener('load', function() {
 
 
 let inp
-let count = 0;
-let timer;
+let count = 0
+let timer
+let isEnd = false
 window.addEventListener('load', function() {
     inp = document.getElementById('in');
     if (!inp){
@@ -21,7 +22,12 @@ window.addEventListener('load', function() {
     inp.addEventListener('click', function () {
         count++;
         if (count >= 6){
+            if(isEnd){
+                return
+            }
+            isEnd = true;
             window.location.href = "the-hidden.html"
+            timer;
         }
         if (!timer) {
             timer = setTimeout(() => {
