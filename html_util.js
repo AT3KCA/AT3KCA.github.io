@@ -26,8 +26,7 @@ window.addEventListener('load', function() {
                 return
             }
             isEnd = true;
-            window.location.href = "the-hidden.html"
-            timer;
+            inp.innerHTML = "<a target='_blank' href='/the-hidden.html'>AT3K_CA copyright</a>";
         }
         if (!timer) {
             timer = setTimeout(() => {
