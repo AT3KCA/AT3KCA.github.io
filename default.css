@@ -1,3 +1,7 @@
+
+
+
+/*普通控件*/
 body{
     background-color: #333333;
 }
@@ -22,7 +26,11 @@ body{
     color: #FFFFFF;
     position: relative;
 }
-
+.box .feel{
+    border: 3px solid #9ffff1;
+    position: relative;
+    width: 15%;
+}
 .box img {
     width: 50%;
     height: 50%;
@@ -89,6 +97,8 @@ embed{
 iframe{
     z-index: 0;
 }
+
+/*隐藏空间*/
 #in {
     color: #ffc3c3;
     font-family: "微软雅黑", serif;
@@ -128,3 +138,25 @@ iframe{
     padding: 0; /* 去除按钮的内边距 */
 }
 
+/*等级颜色*/
+.fa{
+    color:#EC3535;
+}
+.f{
+    color:#E40081;
+}
+.d{
+    color:#AA4BC8;
+}
+.c{
+    color:#4372FF;
+}
+.b{
+    color:#559BC0;
+}
+.a{
+    color:#08C1C1;
+}
+.s{
+    color:#38B20A;
+}
