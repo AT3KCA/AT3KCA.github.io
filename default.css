@@ -138,6 +138,10 @@ iframe{
     padding: 0; /* 去除按钮的内边距 */
 }
 
+.hidden_div{
+    display: none;
+}
+
 /*等级颜色*/
 .fa{
     color:#EC3535;

@@ -44,3 +44,10 @@ function msg_render() {
     const msgDiv = document.getElementById('msg')
     msgDiv.style.display = 'block'
 }
+function render_current(button){
+    let parent = button.closest('div');
+    parent.querySelectorAll('div').forEach(div => {
+        div.className = div.className.replace("hidden_div", "");
+    });
+    button.style = "display: none;"
+}
