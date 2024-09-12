@@ -21,21 +21,23 @@ body{
     background-color: #3B3B3B;
 }
 
+
 .box {
     /*border: 3px solid #7B7B7B;*/
     border-bottom: 2px solid #7B7B7B;
     color: #FFFFFF;
     position: relative;
+    transition: border-bottom-color 0.25s;
 }
+.box:hover {
+    border-bottom-color: #9ecd91;
+}
+
+
 .box .feel{
-    border: 3px solid #9ffff1;
+    border-bottom: 2px solid #9ffff1;
     position: relative;
     width: 15%;
-}
-.box img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
 }
 .foot {
     position: fixed;
@@ -62,14 +64,23 @@ body{
     color: #FFF9F9;
     /* 鼠标悬停时文字颜色变为白色 */
 }
-
+.title:hover{
+    font-size: 1.75em;
+}
+.title{
+    transition: font-size 0.5s;
+}
 a:link{
     color: #7FFFD4;
 }
 a:visited{
     color: #60ff74;
 }
+a{
+    transition: font-size 0.5s;
+}
 a:hover{
+    font-size: 1.15em;
     color: #ffa3f8;
 }
 a:active{
@@ -101,12 +112,16 @@ iframe{
 
 /*隐藏空间*/
 #in {
-    color: #ffc3c3;
+    color: #ffb0b0;
     font-family: "微软雅黑", serif;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition: color 0.5s;
+}
+#in:hover {
+    color: #ffde9d;
 }
 #inx {
     color: #e0ffc3;
