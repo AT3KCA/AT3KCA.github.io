@@ -22,7 +22,8 @@ body{
 }
 
 .box {
-    border: 3px solid #7B7B7B;
+    /*border: 3px solid #7B7B7B;*/
+    border-bottom: 2px solid #7B7B7B;
     color: #FFFFFF;
     position: relative;
 }
@@ -63,10 +64,10 @@ body{
 }
 
 a:link{
-    color: #ffc3c3;
+    color: #7FFFD4;
 }
 a:visited{
-    color: #7FFFD4;
+    color: #60ff74;
 }
 a:hover{
     color: #ffa3f8;
