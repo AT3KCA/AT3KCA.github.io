@@ -53,8 +53,14 @@ function load_text(name) {
     let url = "/" + name;
     let div = document.getElementById("boxs");
     div.innerHTML = "<p>尝试加载中</p>";
+
+    http.timeout = 10000
     http.open("GET", url, true);
     http.send();
+
+    http.ontimeout = function (){
+        div.innerHTML = "<p>请求超时</p>";
+    }
     http.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             div.innerHTML = ""
@@ -77,8 +83,6 @@ function load_text(name) {
                 }
                 div.append(box);
             }
-        } else {
-            div.innerHTML = "<p>加载失败</p>"
         }
     }
     console.log("loaded document:", name);
