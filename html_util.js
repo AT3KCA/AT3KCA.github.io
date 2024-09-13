@@ -52,7 +52,7 @@ function load_text(name) {
     const http = new XMLHttpRequest();
     let url = "/" + name;
     let div = document.getElementById("boxs");
-    div.innerHTML = "<p>尝试加载中</p>";
+    div.innerHTML = "<p>尝试加载中,这需要一些时间</p>";
 
     http.timeout = 10000
     http.open("GET", url, true);
