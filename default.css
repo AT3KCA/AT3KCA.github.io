@@ -28,6 +28,7 @@ body{
     background-color: #3c3c3c;
     opacity: 0.85;
     border-radius: 15px;
+    z-index: 1;
 }
 .head_as:hover{
     background-color: #4a4a4a;
