@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>AT3K_CA 的 日志</title>
     <meta name="description" content="AT3K_CA的日志?">
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="/default.css">
+    <script src="/html_util.js"></script>
 </head>
 <body>
 <!-- div:
@@ -16,21 +17,31 @@
 <canvas id="canvas">抱歉，你的浏览器不支持 canvas 元素
     （这些内容将会在不支持&lt;canvas%gt;元素的浏览器或是禁用了 JavaScript
     的浏览器内渲染并展现）</canvas>
-<p>如果你发现网页渲染不全,你应该刷新或者尝试改善自身环境(如刷新dns缓存)</p>
-<p class="head"><a href="index.html">[返回]</a></p>
+<p class="back"><a href="index.html">[返回]</a></p>
 <div class="root">
+    <div class="head_as">
+        <p>AT3K_CA</p>
+        <a href="index.html">主页</a>
+        <a href="fun.html">文段</a>
+        <a href="daily.html">日志</a>
+        <a href="misc.html">杂项</a>
+        <a href="sf.html">自我</a>
+    </div>
     <p>这里是日志导航</p>
     <div class="box">
-        <p><a href="daily/daily-2024-8.html">[2024-8]</a></p>
+        <p><a onclick="load_text('daily/daily-2024-8.htp')" href="#">[2024-8]</a></p>
     </div>
     <div class="box">
-        <p><a href="daily/daily-2024-9.html">[2024-9]</a></p>
+        <p><a onclick="load_text('daily/daily-2024-9.htp')" href="#">[2024-9]</a></p>
+    </div>
+    <div id="boxs">
     </div>
 </div>
 <div class="foot">
     <p id="in">AT3K_CA copyright</p>
     <button id="render">Render</button>
+    <button id="down">Down</button>
 </div>
-<script src="particle.js"></script>
+<script src="/particle.js"></script>
 </body>
 </html>

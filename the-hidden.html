@@ -3,77 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>AT3K_CA 的 隐藏页</title>
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="/default.css">
 </head>
 <body>
 
 <canvas id="canvas">抱歉，你的浏览器不支持 canvas 元素
     （这些内容将会在不支持&lt;canvas%gt;元素的浏览器或是禁用了 JavaScript
     的浏览器内渲染并展现）</canvas>
-<p>如果你发现网页渲染不全,你应该刷新或者尝试改善自身环境(如刷新dns缓存)</p>
+<p class="back"><a href="index.html">[返回]</a></p>
 <div class="root">
-    <div class="box">
-        <h2>AT3K_CA 隐藏页</h2>
+    <div class="head_as">
+        <p>AT3K_CA</p>
+        <a href="index.html">主页</a>
+        <a href="fun.html">文段</a>
+        <a href="daily.html">日志</a>
+        <a href="misc.html">杂项</a>
+        <a href="sf.html">自我</a>
     </div>
     <div class="box">
         <h3>如果你是正常手段的进来的话</h3>
-        <h3>快<button id="hidden_btn" class="btn_h3">出去</button>,这里不是你该来的地方</h3>
+        <h3>快<a id="hidden_btn" class="btn_h3" onclick="load_text('hidden/hidden-0.htp')" href="#">出去</a>,这里不是你该来的地方</h3>
         <h4><a href="index.html">不知道你从哪里来的,先给你送回首页吧</a></h4>
     </div>
-    <div id="msg" style="display:none;">
-        <div class="box">
-            <p>你肯定是看见我了</p>
-            <p>这里有AT3K_CA最心底的想法,如果让你感到尴尬,就别看下去了</p>
-        </div>
-        <div class="box">
-            <h3>Title 2024/8/28</h3>
-            <p>看了up主<a href="https://space.bilibili.com/293086437">杉木木头</a>的ts好兄弟系列有感,后文将好兄弟命名为tsb</p>
-            <p>在截止2024/8/28最新系列作品<a href="https://www.bilibili.com/video/BV1J4421o7uF">好兄弟的日常，就会一直持续下去吧，一直…………</a>,(Delete -2024/9/1)</p>
-            <p>该作者的画风独特,很爱看</p>
-        </div>
-        <div class="box">
-            <h3>Title 2024/9/5</h3>
-            <p><a href="https://www.bilibili.com/video/BV1dspPeQEtZ">好兄弟变成美少女后尝试拍色色的</a> - <a href="https://space.bilibili.com/293086437">[杉木木头]</a></p>
-            <p>更新了</p>
-            <p>不能忘记三连</p>
-            <p>很好的作品</p>
-            <p>画风极具辨识度</p>
-            <p>总是能在主页中一眼认出来</p>
-        </div>
-        <div class="box">
-            <h3>情侣 2024/9/6</h3>
-            <p>在大街上搂搂抱抱亲热的情侣真恶心</p>
-            <p>他们还只是高中生</p>
-            <p>我确实是嫉妒了</p>
-            <p>我没有这样的可能</p>
-            <p>话说回来</p>
-            <p>这确实让我看到了一些青春的样子</p>
-        </div>
-        <div class="box">
-            <h3>Title 2024/9/8</h3>
-            <p><a href="https://www.bilibili.com/video/BV1WypeenE7b">好兄弟变成美少女后，打算拍视频补贴家用，我配合一下</a> - <a href="https://space.bilibili.com/293086437">[杉木木头]</a></p>
-            <p>一如既往的可爱</p>
-            <p>还是要三连支持</p>
-            <p>画的太漂亮了</p>
-            <p>不知道我在想什么...</p>
-            <p>说不心动是假的</p>
-            <p>可以对不存在的人物说声"爱你"?</p>
-        </div>
-    </div>
+    <div id="boxs"></div>
 
 </div>
 
 <div class="foot">
     <p id="inx">AT3K_CA copyright</p>
     <button id="render">Render</button>
+    <button id="down">Down</button>
 </div>
-<script src="particle.js"></script>
-<script src="html_util.js"></script>
-<script>
-   const hidden_btn = document.getElementById("hidden_btn")
-   hidden_btn.addEventListener("click",function () {
-        msg_render()
-   })
-</script>
+<script src="/particle.js"></script>
+<script src="/html_util.js"></script>
 </body>
 </html>
