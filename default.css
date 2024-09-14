@@ -41,12 +41,22 @@ body{
     margin-right: 1%;
     display: inline;
     font-size: 1.5em;
+    user-select: none;
+}
+.head_as p{
+    user-select: none;
+    transition: all 0.5s;
+}
+.head_as p:hover{
+    color: #e3bded;
+    font-size: 1.6em;
 }
 .head_as a{
-    transition: font-size 0.5s;
+    transition: all 0.5s;
 }
 .head_as a:hover{
     font-size: 1.6em;
+    color: #ffee93
 }
 
 
@@ -63,10 +73,29 @@ body{
     border-bottom: 2px solid #7B7B7B;
     color: #FFFFFF;
     position: relative;
-    transition: border-bottom-color 0.25s;
+    transition: all 0.5s;
 }
 .box:hover {
-    border-bottom-color: #9ecd91;
+
+    border-bottom-color: #94cf83;
+}
+
+.box h3{
+    user-select: none;
+    transition: all 0.25s;
+    font-size: 1.25em;
+}
+.box h3:hover{
+    color: #fff7db;
+    font-size: 1.35em;
+    text-shadow: #f6ff94 1px 0 10px;
+}
+.box p{
+    user-select: none;
+    transition: all 0.5s;
+}
+.box p:hover{
+    text-shadow: #bbfeff 1px 0 2px;
 }
 
 
@@ -90,11 +119,13 @@ body{
     color: #000000;
     display: inline-block;
     /* 使 div 的大小仅与内容一样，并保持块级元素的特性 */
-    transition: color 4.5s;
+    transition: all 4.5s;
 }
 
 .hid:hover {
-    color: #FFF9F9;
+    background-color: transparent;
+    color: #fff3f3;
+    text-shadow: #f3ff7b 1px 0 10px;
     /* 鼠标悬停时文字颜色变为白色 */
 }
 a:link{
