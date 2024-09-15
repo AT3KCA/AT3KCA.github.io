@@ -42,7 +42,7 @@ window.addEventListener('load', function () {
 
 
 function isHtmlTag(line) {
-    let htmlTagPattern = /<(" "]*"|'[^']*'|[^'">])*>/
+    let htmlTagPattern = /<("[^"]*"|'[^']*'|[^'">])*>/
     return htmlTagPattern.test(line);
 }
 
@@ -72,6 +72,7 @@ function load_text(name) {
                 let ls = ps[i].split("\n");
 
                 for (let j = 0; j < ls.length; j++) {
+                    console.log(ls[j],isHtmlTag(ls[j]))
                     if (isHtmlTag(ls[j])) {
                         box.innerHTML += ls[j]
                     } else {
