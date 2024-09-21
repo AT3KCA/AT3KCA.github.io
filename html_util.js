@@ -59,7 +59,7 @@ function load_text(name) {
     http.send();
 
     http.ontimeout = function (){
-        div.innerHTML = "<p>请求超时</p>";
+        div.innerHTML = "<p>请求超时,请尝试刷新</p><p>或者说你可以尝试改善你的网络,比如挂一个加速器</p><p>当然,你也可以根据html_util.js手动尝试获取我的文段</p>";
     }
     http.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
