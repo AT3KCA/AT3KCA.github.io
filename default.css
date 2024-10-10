@@ -92,7 +92,7 @@ body{
 }
 .box p{
     user-select: none;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .box p:hover{
     text-shadow: #bbfeff 1px 0 2px;
