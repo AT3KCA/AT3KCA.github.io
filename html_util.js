@@ -73,10 +73,12 @@ function load_text(name) {
 
                 for (let j = 0; j < ls.length; j++) {
                     console.log(ls[j],isHtmlTag(ls[j]))
+                    if (ls[j].startsWith("###")) continue
                     if (isHtmlTag(ls[j])) {
                         box.innerHTML += ls[j]
                     } else {
                         if (ls[j].trim() === "") continue
+
                         let ap = document.createElement("p");
                         ap.innerText = ls[j]
                         box.append(ap);
